@@ -6,16 +6,19 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    screens: {
-      sm: '480px',
-      md: '768px',
-      lg: '976px',
-      xl: '1440px',
+    extend: {
+      screens: {
+        sm: '480px',
+        md: '768px',
+        lg: '976px',
+        xl: '1440px',
+      },
+      colors: {
+        primary: '#53BD95',
+        'primary-dark': '#2C785C',
+
+      },
     },
-    colors: {
-      primary: '#53BD95',
-      'primary-dark': '#2C785C',
-    }
   },
   plugins: [],
 }
